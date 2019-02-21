@@ -183,7 +183,7 @@ describe( 'actions', () => {
 				clientId: 'ribs',
 			};
 			const index = 5;
-			expect( insertBlock( block, index, 'testclientid' ) ).toEqual( {
+			expect( insertBlock( block, index, 'testclientid', true, true ) ).toEqual( {
 				type: 'INSERT_BLOCKS',
 				blocks: [ block ],
 				index,
@@ -200,7 +200,7 @@ describe( 'actions', () => {
 				clientId: 'ribs',
 			} ];
 			const index = 3;
-			expect( insertBlocks( blocks, index, 'testclientid' ) ).toEqual( {
+			expect( insertBlocks( blocks, index, 'testclientid', true, true ) ).toEqual( {
 				type: 'INSERT_BLOCKS',
 				blocks,
 				index,
